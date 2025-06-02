@@ -96,6 +96,7 @@ blockquote {
 code {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
   color:#efefef;
+  background-color: #545454;
   font-size:13px;
   margin: 0 4px;
   padding: 4px 6px;
@@ -201,8 +202,7 @@ dt {
           transition: border-radius 0.3s ease;
 
           &:hover {
-            background: #8dbe91;
-            border-radius: 2px;
+            border-radius: 3px;
           }
         }
 
