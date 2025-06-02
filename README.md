@@ -2,6 +2,13 @@ This data science project, conducted at UCSD, explores the relationship between 
 
 # Table of Contents
 - [Introduction](#introduction)
+- [Data Cleaning and Exploratory Data Analysis](#data-cleaning-and-exploratory-data-analysis)
+- [Assessment of Missingness](#assessment-of-missingness)
+- [Hypothesis Testing](#hypothesis-testing)
+- [Framing a Prediction Problem](#framing-a-prediction-problem)
+- [Baseline Model](#baseline-model)
+- [Final Model](#final-model)
+- [Fairness Analysis](#fairness-analysis)
 
 # Introduction
 The dataset used for this project contains recipes and ratings from [food.com](https://food.com/) posted since 2008. This dataset was originally scraped and used in the paper, [Generating Personalized Recipes from Historical User Preferences](https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf), by Majumder et al.
@@ -32,3 +39,17 @@ The `ratings` dataset contains 731927 unique reviews. The following information 
 | `'date'`      | Date of interaction |
 | `'rating'`    | Rating given        |
 | `'review'`    | Review text         |
+
+# Data Cleaning and Exploratory Data Analysis
+
+# Assessment of Missingness
+
+# Hypothesis Testing
+
+# Framing a Prediction Problem
+
+# Baseline Model
+
+# Final Model
+
+# Fairness Analysis
