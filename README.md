@@ -1,1 +1,2 @@
-# DSC80-Final-Project
+# The Relationship Between Calories and Recipe Rating
+By: Justin Lee
