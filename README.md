@@ -17,28 +17,32 @@ The `recipe` dataset contains 83782 unique recipes. The following information is
 
 | Column             | Description                                                                                                                                                                                       |
 | :----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `'name'`           | Recipe name                                                                                                                                                                                       |
-| `'id'`             | Recipe ID                                                                                                                                                                                         |
-| `'minutes'`        | Minutes to prepare recipe                                                                                                                                                                         |
-| `'contributor_id'` | User ID who submitted this recipe                                                                                                                                                                 |
-| `'submitted'`      | Date recipe was submitted                                                                                                                                                                         |
-| `'tags'`           | Food.com tags for recipe                                                                                                                                                                          |
-| `'nutrition'`      | Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value” |
-| `'n_steps'`        | Number of steps in recipe                                                                                                                                                                         |
-| `'steps'`          | Text for recipe steps, in order                                                                                                                                                                   |
-| `'description'`    | User-provided description                                                                                                                                                                         |
-| `'ingredients'`    | Text for recipe ingredients                                                                                                                                                                       |
-| `'n_ingredients'`  | Number of ingredients in recipe                                                                                                                                                                   |
+| `name`           | Recipe name                                                                                                                                                                                       |
+| `id`             | Recipe ID                                                                                                                                                                                         |
+| `minutes`        | Minutes to prepare recipe                                                                                                                                                                         |
+| `contributor_id` | User ID who submitted this recipe                                                                                                                                                                 |
+| `submitted`      | Date recipe was submitted                                                                                                                                                                         |
+| `tags`           | Food.com tags for recipe                                                                                                                                                                          |
+| `nutrition`      | Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for “percentage of daily value” |
+| `n_steps`        | Number of steps in recipe                                                                                                                                                                         |
+| `steps`          | Text for recipe steps, in order                                                                                                                                                                   |
+| `description`    | User-provided description                                                                                                                                                                         |
+| `ingredients`    | Text for recipe ingredients                                                                                                                                                                       |
+| `n_ingredients`  | Number of ingredients in recipe                                                                                                                                                                   |
 
 The `ratings` dataset contains 731927 unique reviews. The following information is given for each review:
 
 | Column        | Description         |
 | :------------ | :------------------ |
-| `'user_id'`   | User ID             |
-| `'recipe_id'` | Recipe ID           |
-| `'date'`      | Date of interaction |
-| `'rating'`    | Rating given        |
-| `'review'`    | Review text         |
+| `user_id`   | User ID             |
+| `recipe_id` | Recipe ID           |
+| `date`      | Date of interaction |
+| `rating`    | Rating given        |
+| `review`    | Review text         |
+
+Using these datasets I explored whether the recipes with high calories were rated lower than recipes with low calories. To do this I derived the amount of calories per recipe from the `nutrition` column from the `recipes` dataset and stored these values in a new column, `calories`. I then calculated the average rating for each recipe from the `rating` column in the `ratings` dataset and stored these values in the column, `avg_rating`.
+
+The answer to this question could provide useful insight into calories effect an individual's perception of a recipe.
 
 # Data Cleaning and Exploratory Data Analysis
 
