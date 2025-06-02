@@ -50,12 +50,12 @@ h3 {
 }
 
 a {
-  color:#ffcc00;
+  color:#ADEBB3;
   font-weight:400;
   text-decoration:none;
 
   &:hover {
-    color: #ffeb9b;
+    color: #8dbe91;
   }
 }
 
@@ -87,7 +87,7 @@ section img {
 }
 
 blockquote {
-  border-left:3px solid #ffcc00;
+  border-left:3px solid #ADEBB3;
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
@@ -198,9 +198,11 @@ dt {
           font-size:14px;
           display:inline-block;
           text-align:center;
+          transition: border-radius 0.3s ease;
 
           &:hover {
-            background: #a2dba7;
+            background: #8dbe91;
+            border-radius: 2px;
           }
         }
 
