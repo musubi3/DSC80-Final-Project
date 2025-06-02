@@ -55,7 +55,7 @@ a {
   text-decoration:none;
 
   &:hover {
-    color: #8dbe91;
+    color: #9acf9f;
   }
 }
 
@@ -96,7 +96,7 @@ blockquote {
 code {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
   color:#efefef;
-  background-color: #545454;
+  background-color: #454545;
   font-size:13px;
   margin: 0 4px;
   padding: 4px 6px;
@@ -199,10 +199,11 @@ dt {
           font-size:14px;
           display:inline-block;
           text-align:center;
-          transition: border-radius 0.3s ease;
+          transition: border-radius 0.5s ease, border-radius 0.5s ease;;
 
           &:hover {
             border-radius: 3px;
+            background: #9acf9f;
           }
         }
 
