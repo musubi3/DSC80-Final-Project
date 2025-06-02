@@ -189,7 +189,7 @@ dt {
 
         a {
           color: black;
-          background: #ADEBB3;
+          background-color: #ADEBB3;
           border-radius: 5px;
           box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
 
@@ -199,11 +199,12 @@ dt {
           font-size:14px;
           display:inline-block;
           text-align:center;
-          transition: border-radius 0.5s ease, border-radius 0.5s ease;;
+          transition: border-radius 0.5s ease, background-color 0.5s ease, color 0.5s ease;
 
           &:hover {
+            color: rgb(40, 40, 40);
             border-radius: 3px;
-            background: #9acf9f;
+            background-color: #9acf9f;
           }
         }
 
