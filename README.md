@@ -46,6 +46,8 @@ The answer to this question could provide useful insight into calories effect an
 
 # Data Cleaning and Exploratory Data Analysis
 
+<iframe src="assets/calorie-freq.html" width="650" height="450" frameborder="0"></iframe>
+
 # Assessment of Missingness
 
 # Hypothesis Testing
