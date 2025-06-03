@@ -11,7 +11,7 @@ This data science project, conducted at UCSD, explores the relationship between 
 - [Fairness Analysis](#fairness-analysis)
 
 # Introduction
-The dataset used for this project contains recipes and ratings from [food.com](https://food.com/) posted since 2008. This dataset was originally scraped and used in the paper, [Generating Personalized Recipes from Historical User Preferences](https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf), by Majumder et al.
+The dataset used for this project contains recipes and ratings from <a href="https://food.com/" target="_blank" rel="noopener noreferrer">food.com</a> posted since 2008. This dataset was originally scraped and used in the paper, <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf" target="_blank" rel="noopener noreferrer">Generating Personalized Recipes from Historical User Preferences</a>, by Majumder et al.
 
 The `recipe` dataset contains 83,782 unique recipes. The following information is given for each recipe:
 
