@@ -48,7 +48,13 @@ The answer to this question could provide useful insight into calories effect an
 
 <iframe src="assets/calorie-freq.html" width="650" height="450" frameborder="0"></iframe>
 
+<iframe src="assets/dist-rating.html" width="650" height="450" frameborder="0"></iframe>
+
 # Assessment of Missingness
+
+<iframe src="assets/calories-missing.html" width="650" height="450" frameborder="0"></iframe>
+
+<iframe src="assets/missing-dependency.html" width="650" height="450" frameborder="0"></iframe>
 
 # Hypothesis Testing
 
