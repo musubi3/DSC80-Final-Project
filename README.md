@@ -46,12 +46,22 @@ The answer to this question could provide useful insight into calories effect an
 
 # Data Cleaning and Exploratory Data Analysis
 
+### Univariate Analysis
 <iframe src="assets/calorie-freq.html" width="650" height="450" frameborder="0"></iframe>
 
+<iframe src="assets/rating-freq.html" width="650" height="450" frameborder="0"></iframe>
+
+### Bivariate Analysis
 <iframe src="assets/dist-rating.html" width="650" height="450" frameborder="0"></iframe>
 
-# Assessment of Missingness
+<iframe src="assets/cal-healthy.html" width="650" height="450" frameborder="0"></iframe>
 
+### Interesting Aggregates
+
+# Assessment of Missingness
+### NMAR Analysis
+
+### Missingness Dependency
 <iframe src="assets/calories-missing.html" width="650" height="450" frameborder="0"></iframe>
 
 <iframe src="assets/missing-dependency.html" width="650" height="450" frameborder="0"></iframe>
