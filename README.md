@@ -47,14 +47,14 @@ The answer to this question could provide useful insight into calories effect an
 # Data Cleaning and Exploratory Data Analysis
 
 ### Univariate Analysis
-<iframe src="assets/calorie-freq.html" width="650" height="450" frameborder="0"></iframe>
+<iframe src="assets/univariate1.html" width="650" height="450" frameborder="0"></iframe>
 
-<iframe src="assets/rating-freq.html" width="650" height="450" frameborder="0"></iframe>
+<iframe src="assets/univariate2.html" width="650" height="450" frameborder="0"></iframe>
 
 ### Bivariate Analysis
-<iframe src="assets/dist-rating.html" width="650" height="450" frameborder="0"></iframe>
+<iframe src="assets/bivariate1.html" width="650" height="450" frameborder="0"></iframe>
 
-<iframe src="assets/cal-healthy.html" width="650" height="450" frameborder="0"></iframe>
+<iframe src="assets/bivariate2.html" width="650" height="450" frameborder="0"></iframe>
 
 ### Interesting Aggregates
 
@@ -62,11 +62,17 @@ The answer to this question could provide useful insight into calories effect an
 ### NMAR Analysis
 
 ### Missingness Dependency
-<iframe src="assets/calories-missing.html" width="650" height="450" frameborder="0"></iframe>
+<iframe src="assets/missing1.html" width="650" height="450" frameborder="0"></iframe>
 
-<iframe src="assets/missing-dependency.html" width="650" height="450" frameborder="0"></iframe>
+<iframe src="assets/missing2.html" width="650" height="450" frameborder="0"></iframe>
+
+<iframe src="assets/missing3.html" width="650" height="450" frameborder="0"></iframe>
+
+<iframe src="assets/missing4.html" width="650" height="450" frameborder="0"></iframe>
 
 # Hypothesis Testing
+
+<iframe src="assets/ht-plot.html" width="650" height="450" frameborder="0"></iframe>
 
 # Framing a Prediction Problem
 
@@ -75,3 +81,5 @@ The answer to this question could provide useful insight into calories effect an
 # Final Model
 
 # Fairness Analysis
+
+<iframe src="assets/fairness.html" width="650" height="450" frameborder="0"></iframe>
