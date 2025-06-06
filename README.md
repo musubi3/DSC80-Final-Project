@@ -68,6 +68,8 @@ To make the datasets more suitable for my analysis I made the following transfor
 
 ### Result
 
+The cleaned dataset features 83,782 rows and 20 columns. Below are the selected columns and their respective data types.
+
 | Column         | Type    |
 |:---------------|:--------|
 | `name`         | object  |
@@ -90,10 +92,13 @@ To make the datasets more suitable for my analysis I made the following transfor
 | `carbohydrates`  | float64 |
 | `calorie_level`  | object  |
 
-
-
 ### Univariate Analysis
+
+For this plot I analyzed the distribution of `calories`. There were a lot of large outliers present in the `calories` column. In order to avoid them, I dropped the outliers of `calories` using the interquartile range (IQR) method. The distribution is skewed to the right, indicating that more recipes with lower calories than higher calories.
+
 <iframe src="assets/univariate1.html" width="650" height="450" frameborder="0"></iframe>
+
+For this plot I analyzed the distribution of `avg_rating`. The distribution is skewed to the left, indicating most of the recipes have a high average rating.
 
 <iframe src="assets/univariate2.html" width="650" height="450" frameborder="0"></iframe>
 
