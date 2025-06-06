@@ -93,21 +93,28 @@ The cleaned dataset features 83,782 rows and 20 columns. Below are the selected 
 | `calorie_level`  | object  |
 
 ### Univariate Analysis
+<iframe src="assets/univariate1.html" width="650" height="450" frameborder="0"></iframe>
 
 For this plot I analyzed the distribution of `calories`. There were a lot of large outliers present in the `calories` column. In order to avoid them, I dropped the outliers of `calories` using the interquartile range (IQR) method. The distribution is skewed to the right, indicating that more recipes with lower calories than higher calories.
 
-<iframe src="assets/univariate1.html" width="650" height="450" frameborder="0"></iframe>
+<iframe src="assets/univariate2.html" width="650" height="450" frameborder="0"></iframe>
 
 For this plot I analyzed the distribution of `avg_rating`. The distribution is skewed to the left, indicating most of the recipes have a high average rating.
 
-<iframe src="assets/univariate2.html" width="650" height="450" frameborder="0"></iframe>
-
 ### Bivariate Analysis
+For my bivariate analysis, I created two columns `is_dietary` and `is_healthy` to help with the analysis. `is_dietary` indicates if a recipe contains the dietary tag and `is_healthy` indicates if a recipe conatains the healthy tag.
+
 <iframe src="assets/bivariate1.html" width="650" height="450" frameborder="0"></iframe>
+
+For this plot I analyzed the distribution of `avg_rating` between dietary and non-dietary recipes. The distribution is still heavily skewed to the left. Non-dietary recipes appear to have slightly higher average ratings than dietary recipes.
 
 <iframe src="assets/bivariate2.html" width="650" height="450" frameborder="0"></iframe>
 
+For this plot I analyzed the distribution of `calories` by `avg_rating` between healthy and non-healthy recipes. Healthy recipes seem to have less calories than non-healthy recipes.
+
 ### Interesting Aggregates
+
+For this section, I investigated the relationship between the `n_ingredients` and `calories` of the recipes. First, I grouped the cleaned `recipes` dataframe by `n_ingredients`. I then selected the `calories` column and applied the aggregate functions, mean, median, and count. 
 
 | n_ingredients |      mean |   median |   count |
 |:--------------|:---------|:--------|:-------|
@@ -139,6 +146,8 @@ For this plot I analyzed the distribution of `avg_rating`. The distribution is s
 |              32 |   697.35  |   697.35 |       2 |
 |              33 |   338.2   |   338.2  |       1 |
 |              37 | 10687.7   | 10687.7  |       1 |
+
+<iframe src="assets/aggregate.html" width="650" height="450" frameborder="0"></iframe>
 
 # Assessment of Missingness
 ### NMAR Analysis
