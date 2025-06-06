@@ -1,5 +1,3 @@
-This data science project, conducted at UCSD, explores the relationship between calories and average recipe ratings. Using a dataset of thousands of recipes and user interactions, I built a baseline linear regression model that predicts recipe ratings based on calories and whether a recipe is tagged as healthy.
-
 # Table of Contents
 - [Introduction](#introduction)
 - [Data Cleaning and Exploratory Data Analysis](#data-cleaning-and-exploratory-data-analysis)
@@ -11,7 +9,7 @@ This data science project, conducted at UCSD, explores the relationship between 
 - [Fairness Analysis](#fairness-analysis)
 
 # Introduction
-The dataset used for this project contains recipes and ratings from <a href="https://food.com/" target="_blank" rel="noopener noreferrer">food.com</a> posted since 2008. This dataset was originally scraped and used in the paper, <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf" target="_blank" rel="noopener noreferrer">Generating Personalized Recipes from Historical User Preferences</a>, by Majumder et al.
+This data science project, conducted at UCSD, explores the relationship between calories and average recipe ratings. According to the <a href="https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label#Calories" target="_blank" rel="noopener noreferrer">Food and Drug Administration (FDA)</a>, calories are a measure of how much energy you get from one serving of food. Consuming more calories than you use on a daily basis is linked to overweight and obesity. The dataset used for this project contains recipes and ratings from <a href="https://food.com/" target="_blank" rel="noopener noreferrer">food.com</a> posted since 2008. This dataset was originally scraped and used in the paper, <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf" target="_blank" rel="noopener noreferrer">Generating Personalized Recipes from Historical User Preferences</a>, by Majumder et al.
 
 The `recipe` dataset contains 83,782 unique recipes. The following information is given for each recipe:
 
@@ -42,9 +40,57 @@ The `ratings` dataset contains 731,927 unique reviews. The following information
 
 Using these datasets I explored whether the recipes with high calories were rated lower than recipes with low calories. To do this I derived the amount of calories per recipe from the `nutrition` column from the `recipes` dataset and stored these values in a new column, `calories`. I then calculated the average rating for each recipe from the `rating` column in the `ratings` dataset and stored these values in the column, `avg_rating`.
 
-The answer to this question could provide useful insight into calories effect an individual's perception of a recipe.
+The answer to this question could provide useful insight into how calories affect an individual’s perception of a recipe.
 
 # Data Cleaning and Exploratory Data Analysis
+
+To make the datasets more suitable for my analysis I made the following transformations to the `recipes` and `ratings` datasets.
+
+1. Left merge the `recipes` and `ratings` datasets together.
+
+2. Filled all ratings of 0 with `np.nan` in the `merged` dataset.
+
+    - Filling ratings of 0 with `np.nan` avoids having biased average ratings. 
+
+3. Calculated the average rating per recipe, as a Series.
+
+4. Added this the average recipe rating Series back to the `recipes` dataset.
+
+5. Converted `nutrition`, `tags`, `steps`, and `ingredients` columns from str to list.
+
+    - These columns appear to be list, but are actually str
+
+6. Split the `nutrition` column into individual columns.
+
+7. Added `calorie_level` column that labels recipes as either 'High' or 'Low' depending if their calories are greater than or less than the median for `calories`.
+
+8. Drop columns unrelated to my topic.
+
+### Result
+
+| Column         | Type    |
+|:---------------|:--------|
+| `name`         | object  |
+| `id`           | int64   |
+| `minutes`      | int64   |
+| `submitted`      | object  |
+| `tags`           | object  |
+| `n_steps`        | int64   |
+| `steps`          | object  |
+| `description`    | object  |
+| `ingredients`    | object  |
+| `n_ingredients`  | int64   |
+| `avg_rating`     | float64 |
+| `calories`       | float64 |
+| `total_fat`      | float64 |
+| `sugar`          | float64 |
+| `sodium`         | float64 |
+| `protein`        | float64 |
+| `saturated_fat`  | float64 |
+| `carbohydrates`  | float64 |
+| `calorie_level`  | object  |
+
+
 
 ### Univariate Analysis
 <iframe src="assets/univariate1.html" width="650" height="450" frameborder="0"></iframe>
